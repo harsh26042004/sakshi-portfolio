@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sakshi Sah | Marketing & Business Development Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{--pink:#FFD3E6;--lav:#DDD1FF;--mint:#C6F3DC;--butter:#FFF1A8;--sky:#C7E6FF;--peach:#FFD9BF;--ink:#33254F;--soft:#5E5078;--bg:#FFFBF7;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:70px;color-scheme:light}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:6px;flex-wrap:wrap;justify-content:center;padding:10px 12px;background:rgba(255,251,247,.92);backdrop-filter:blur(8px)}
+nav a{text-decoration:none;font-weight:500;font-size:15px;padding:6px 14px;border-radius:99px;background:var(--lav)}
+nav a:nth-child(2){background:var(--pink)}nav a:nth-child(3){background:var(--mint)}nav a:nth-child(4){background:var(--butter)}nav a:nth-child(5){background:var(--sky)}
+nav a:hover{filter:brightness(.95)}
+section,header{max-width:1000px;margin:0 auto;padding:56px 20px}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+.hero h1{font-size:clamp(44px,8vw,84px);font-weight:800;letter-spacing:-.03em}
+.hero h1 span{display:inline-block;background:var(--pink);padding:0 .18em;border-radius:.25em;transform:rotate(-1.5deg)}
+.role{font-size:20px;color:var(--soft);margin:18px 0 26px;max-width:34ch}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:13px 24px;border-radius:99px;background:var(--butter);border:2px solid var(--ink)}
+.btn.alt{background:var(--mint)}
+.btn:hover{background:var(--peach)}
+.photo{position:relative;justify-self:center;width:min(320px,80%)}
+.photo::before{content:"";position:absolute;inset:-14px;background:var(--lav);border-radius:46% 54% 42% 58%/55% 45% 55% 45%;transform:rotate(6deg)}
+.photo::after{content:"";position:absolute;width:64px;height:64px;right:-18px;bottom:20px;background:var(--peach);border-radius:50%}
+.photo img{position:relative;z-index:1;width:100%;aspect-ratio:1;object-fit:cover;object-position:50% 25%;border-radius:42% 58% 46% 54%/52% 48% 52% 48%;display:block;border:4px solid var(--bg)}
+h2{font-size:clamp(30px,5vw,44px);font-weight:800;margin-bottom:24px;letter-spacing:-.02em}
+.about p{font-size:19px;max-width:66ch;margin:0 0 14px}
+.stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.stat{padding:14px 22px;border-radius:22px;font-weight:500}
+.stat b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:28px}
+.stat:nth-child(1){background:var(--sky)}.stat:nth-child(2){background:var(--mint)}.stat:nth-child(3){background:var(--pink)}.stat:nth-child(4){background:var(--butter)}
+.jobs{display:grid;gap:16px}
+.job{border-radius:26px;padding:22px 24px;background:var(--c)}
+.job:nth-child(6n+1){--c:var(--pink)}.job:nth-child(6n+2){--c:var(--sky)}.job:nth-child(6n+3){--c:var(--mint)}.job:nth-child(6n+4){--c:var(--butter)}.job:nth-child(6n+5){--c:var(--lav)}.job:nth-child(6n){--c:var(--peach)}
+.job h3{font-size:22px;font-weight:700}
+.job .meta{font-size:15px;color:var(--soft);margin:4px 0 10px}
+.job ul{margin:0;padding-left:20px}
+.job li{margin:3px 0}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{padding:8px 16px;border-radius:99px;font-weight:500;background:var(--c,var(--lav))}
+.chip:nth-child(5n+1){--c:var(--pink)}.chip:nth-child(5n+2){--c:var(--sky)}.chip:nth-child(5n+3){--c:var(--mint)}.chip:nth-child(5n+4){--c:var(--butter)}.chip:nth-child(5n){--c:var(--peach)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.cols h3{font-size:22px;margin-bottom:12px}
+.list{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.list li{padding:10px 16px;border-radius:16px;background:var(--lav)}
+.list.g li{background:var(--mint)}
+.edu{display:grid;gap:10px}
+.edu div{padding:14px 18px;border-radius:18px;background:var(--butter)}
+.edu div:nth-child(2){background:var(--sky)}.edu div:nth-child(3){background:var(--pink)}
+.edu small{display:block;color:var(--soft)}
+.contact{text-align:center;background:var(--lav);border-radius:36px;max-width:960px;margin:20px auto 40px;padding:52px 20px}
+.contact p{max-width:44ch;margin:0 auto 24px;font-size:19px}
+.contact .btns{justify-content:center}
+footer{text-align:center;padding:0 20px 36px;color:var(--soft);font-size:14px}
+@media(max-width:720px){.hero{grid-template-columns:1fr;text-align:center}.hero .role{margin-inline:auto}.btns{justify-content:center}.photo{order:-1;margin-top:10px}.cols{grid-template-columns:1fr}section,header{padding:40px 16px}}
+</style>
+</head>
+<body>
+<nav aria-label="Sections"><a href="#about">About</a><a href="#work">Experience</a><a href="#skills">Skills</a><a href="#learn">Learning</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<div>
+<h1>Hi, I'm <span>Sakshi</span> Sah</h1>
+<p class="role">Marketing and HR student who turns campaigns, customer conversations and CRM follow-ups into leads.</p>
+<div class="btns"><a class="btn" href="#work">See my work</a><a class="btn alt" href="mailto:ssah009900@gmail.com">Email me</a></div>
+</div>
+<div class="photo"><img alt="Portrait of Sakshi Sah in a black blazer" src="photo.jpg"></div>
+</header>
+
+<section id="about" class="about">
+<h2>About me</h2>
+<p>I'm a third-year BBA-MS (Management Science) student at GLA University, specializing in Marketing with a minor in HR.</p>
+<p>Since 2023 I have worked across SEO, Meta and Google Ads, graphic design, in-store sales and real estate lead generation. I'm now looking for a Business Development role where communication, persuasion and relationship-building count.</p>
+<div class="stats">
+<div class="stat"><b>8+</b>roles and internships</div>
+<div class="stat"><b>2</b>international SEO projects</div>
+<div class="stat"><b>7</b>certifications</div>
+<div class="stat"><b>3 yrs</b>freelancing</div>
+</div>
+</section>
+
+<section id="work">
+<h2>Experience</h2>
+<div class="jobs">
+<article class="job"><h3>Sales Executive Intern</h3><div class="meta">Dabur at Reliance Smart Bazaar, Lucknow | Aug 2026</div><ul><li>Engaged customers directly at the point of sale.</li><li>Supported in-store sales, product pitching and customer engagement.</li></ul></article>
+<article class="job"><h3>Marketing Intern</h3><div class="meta">KMD Real Estate, Mathura | Jul-Aug 2026</div><ul><li>Managed the company CRM and daily client follow-ups.</li><li>Ran Meta Ads and analyzed the online real estate market.</li><li>Ran the Instagram page with daily creatives and AI-generated ad videos.</li><li>Worked on website boosting and on-page SEO.</li></ul></article>
+<article class="job"><h3>Performance Marketer</h3><div class="meta">Brickonn Real Estate, Vrindavan | Jul-Aug 2026</div><ul><li>Planned Meta and Google Ads campaigns to generate qualified leads.</li><li>Tracked CTR, CPL and conversion rate to optimize ad spend and ROI.</li><li>Routed leads to the sales team and scheduled site visits.</li></ul></article>
+<article class="job"><h3>Marketing Manager (Digital Marketer and Designer)</h3><div class="meta">Media On Stake, college startup | Oct 2025 - Apr 2026</div><ul><li>Ran SEO and digital campaigns end to end.</li><li>Designed high-conversion social media creatives.</li><li>Shaped brand positioning, content planning and audience engagement.</li></ul></article>
+<article class="job"><h3>Freelance Digital Marketer and Designer</h3><div class="meta">Self-employed | 2024 - Present</div><ul><li>Work directly with clients to understand needs and deliver tailored campaigns.</li><li>Designed logos, branding kits and social creatives for multiple clients.</li></ul></article>
+<article class="job"><h3>SEO Executive</h3><div class="meta">WebUltro Technologies | Mar - Sep 2024</div><ul><li>Delivered two 3-month international projects: Edellin.ca and ViewTech.ca.</li><li>Handled on-page and off-page SEO, keyword research and backlinks.</li><li>Tracked performance with Google Analytics and Search Console.</li></ul></article>
+<article class="job"><h3>Graphic Designer and Resource Person</h3><div class="meta">IBM Department, GLA University (2025) | AALI social internship, Lucknow (Jun-Jul 2025) | Tribeca Ply (2023-2025)</div><ul><li>Designed posters, banners and event visuals with consistent branding.</li><li>Coordinated on-ground activities during the AALI social internship.</li></ul></article>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills and tools</h2>
+<div class="chips">
+<span class="chip">Client engagement and sales</span><span class="chip">Cold calling and outreach</span><span class="chip">CRM software</span><span class="chip">Meta Ads</span><span class="chip">Google Ads</span><span class="chip">Performance marketing</span><span class="chip">Real estate lead generation</span><span class="chip">SEO and SMO</span><span class="chip">Google Analytics</span><span class="chip">Canva</span><span class="chip">Adobe Photoshop</span><span class="chip">CapCut video editing</span><span class="chip">MS Office 365</span><span class="chip">Communication</span><span class="chip">Coordination</span>
+</div>
+</section>
+
+<section id="learn">
+<h2>Learning and leadership</h2>
+<div class="cols">
+<div><h3>Certifications</h3><ul class="list"><li>Google Analytics 4 (GA4)</li><li>HubSpot Social Media</li><li>Semrush Content Marketing</li><li>Semrush AI-Powered Marketing</li><li>Digital Marketing, Webultro (2024)</li><li>HR Fundamentals, SalaryBox Academy</li><li>HR Generalist, Keka Academy</li></ul></div>
+<div><h3>Activities</h3><ul class="list g"><li>Designing Head, Goonj Society Club, GLA University</li><li>Marketing and Designing Head, Saarthi Club, GLA University</li><li>Runner-up, Master Chef, Spandhan 2024-25</li><li>Member, NHRDN Mathura</li><li>Youth Council Member, National Human Rights and Women Welfare Organization</li><li>Member, Seva Samiti Foundation</li></ul>
+<h3 style="margin-top:26px">Education</h3>
+<div class="edu"><div><b>BBA-MS (Management Science)</b><small>GLA University, Mathura | 2024-2027 | CGPA 7.0</small></div><div><b>Senior Secondary, Commerce</b><small>Lucknow Public School | 2024 | 75%</small></div><div><b>Secondary</b><small>Lucknow Public School | 2022 | 65%</small></div></div></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Let's work together</h2>
+<p>Open to Business Development, marketing and HR-marketing roles, and happy to relocate.</p>
+<div class="btns"><a class="btn" href="mailto:ssah009900@gmail.com">ssah009900@gmail.com</a><a class="btn alt" href="tel:+917526054019">+91 75260 54019</a></div>
+</section>
+<footer>Sakshi Sah | BBA-MS Marketing and HR</footer>
+</body>
+</html>
